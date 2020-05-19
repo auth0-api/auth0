@@ -34,7 +34,8 @@ type Connection struct {
 	// character and can only contain alphanumeric characters and '-'. Max
 	// length 128.
 	Name *string `json:"name,omitempty"`
-
+	DisplayName *string `json:"display_name,omitempty"`
+	
 	// The identity provider identifier for the connection. Can be any of the
 	// following:
 	//
