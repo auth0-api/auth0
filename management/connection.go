@@ -5,7 +5,7 @@ import (
 	"sort"
 	"strings"
 
-	"gopkg.in/auth0.v4/internal/tag"
+	"github.com/auth0-api/auth0/internal/tag"
 )
 
 const (
@@ -34,7 +34,8 @@ type Connection struct {
 	// character and can only contain alphanumeric characters and '-'. Max
 	// length 128.
 	Name *string `json:"name,omitempty"`
-
+	DisplayName *string `json:"display_name,omitempty"`
+	
 	// The identity provider identifier for the connection. Can be any of the
 	// following:
 	//

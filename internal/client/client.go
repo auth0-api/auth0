@@ -13,7 +13,7 @@ import (
 	"github.com/PuerkitoBio/rehttp"
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/clientcredentials"
-	"gopkg.in/auth0.v4"
+	"github.com/auth0-api/auth0"
 )
 
 // UserAgent is the default user agent string

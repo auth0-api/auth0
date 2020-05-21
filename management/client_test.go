@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"gopkg.in/auth0.v4"
+	"github.com/auth0-api/auth0"
 )
 
 func TestClient(t *testing.T) {
