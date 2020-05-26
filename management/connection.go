@@ -33,9 +33,9 @@ type Connection struct {
 	// The name of the connection. Must start and end with an alphanumeric
 	// character and can only contain alphanumeric characters and '-'. Max
 	// length 128.
-	Name *string `json:"name,omitempty"`
+	Name        *string `json:"name,omitempty"`
 	DisplayName *string `json:"display_name,omitempty"`
-	
+
 	// The identity provider identifier for the connection. Can be any of the
 	// following:
 	//
@@ -192,7 +192,7 @@ type ConnectionOptionsGoogleOAuth2 struct {
 	ClientID     *string `json:"client_id,omitempty"`
 	ClientSecret *string `json:"client_secret,omitempty"`
 
-	AllowedAudiences []interface{} `json:"allowed_audiences,omitempty"`
+	AllowedAudiences interface{} `json:"allowed_audiences,omitempty"`
 
 	Email                  *bool `json:"email,omitempty" scope:"email"`
 	Profile                *bool `json:"profile,omitempty" scope:"profile"`
